@@ -1,6 +1,6 @@
-﻿namespace BookingProject.Domain.Entities
+﻿namespace BookingProject.Application.Features.CQRS.Results.AboutResults
 {
-    public class Banner
+    public class GetBannerQueryResult
     {
         public int BannerID { get; set; }
         public string Title { get; set; }

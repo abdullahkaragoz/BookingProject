@@ -1,6 +1,6 @@
-﻿namespace BookingProject.Domain.Entities
+﻿namespace BookingProject.Application.Features.CQRS.Commands.BannerCommands
 {
-    public class Banner
+    public class UpdateBannerCommand
     {
         public int BannerID { get; set; }
         public string Title { get; set; }
