@@ -13,7 +13,7 @@ namespace BookingProject.Application.Features.CQRS.Handlers.BannerHandlers
             this.repository = repository;
         }
 
-        public async Task Handler(CreateBannerCommand command)
+        public async Task Handle(CreateBannerCommand command)
         {
             await repository.CreateAsync(new Banner
             {

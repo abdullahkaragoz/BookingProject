@@ -1,4 +1,4 @@
-﻿using BookingProject.Application.Features.CQRS.Queries;
+﻿using BookingProject.Application.Features.CQRS.Queries.BannerQueries;
 using BookingProject.Application.Features.CQRS.Results.BannerResults;
 using BookingProject.Application.Interfaces;
 using BookingProject.Domain.Entities;
@@ -14,7 +14,7 @@ namespace BookingProject.Application.Features.CQRS.Handlers.BannerHandlers
             this.repository = repository;
         }
 
-        public async Task<GetBannerByIdQueryResult> Handle(GetAboutByIdQuery query)
+        public async Task<GetBannerByIdQueryResult> Handle(GetBannerByIdQuery query)
         {
             var values = await repository.GetByIdAsync(query.Id);
             return new GetBannerByIdQueryResult

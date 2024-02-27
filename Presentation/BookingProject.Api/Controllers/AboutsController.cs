@@ -1,8 +1,6 @@
 ﻿using BookingProject.Application.Features.CQRS.Commands.AboutCommands;
 using BookingProject.Application.Features.CQRS.Handlers.AboutHandlers;
-using BookingProject.Application.Features.CQRS.Queries;
-using BookingProject.Application.Features.CQRS.Results.AboutResults;
-using Microsoft.AspNetCore.Http;
+using BookingProject.Application.Features.CQRS.Queries.AboutQueries;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BookingProject.Api.Controllers

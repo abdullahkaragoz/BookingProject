@@ -1,4 +1,4 @@
-﻿using BookingProject.Application.Features.CQRS.Commands.AboutCommands;
+﻿using BookingProject.Application.Features.CQRS.Commands.BannerCommands;
 using BookingProject.Application.Interfaces;
 using BookingProject.Domain.Entities;
 
@@ -13,7 +13,7 @@ namespace BookingProject.Application.Features.CQRS.Handlers.BannerHandlers
             this.repository = repository;
         }
 
-        public async Task Handle(RemoveAboutCommand command)
+        public async Task Handle(RemoveBannerCommand command)
         {
             var value = await repository.GetByIdAsync(command.Id);
             await repository.RemoveAsync(value);

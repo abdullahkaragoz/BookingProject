@@ -1,4 +1,4 @@
-﻿using BookingProject.Application.Features.CQRS.Queries;
+﻿using BookingProject.Application.Features.CQRS.Queries.AboutQueries;
 using BookingProject.Application.Features.CQRS.Results.AboutResults;
 using BookingProject.Application.Interfaces;
 using BookingProject.Domain.Entities;

@@ -1,4 +1,4 @@
-﻿namespace BookingProject.Application.Features.CQRS.Queries
+﻿namespace BookingProject.Application.Features.CQRS.Queries.AboutQueries
 {
     public class GetAboutByIdQuery
     {
